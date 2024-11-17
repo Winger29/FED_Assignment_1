@@ -1,0 +1,37 @@
+header {
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 0px;
+    width: auto;
+    height: 60px;
+    padding: 15px;
+    background-color: gray;
+    margin: 0;
+}
+
+.bname h1 {
+    color: white;
+    margin: 0 auto;
+    padding: auto;
+    padding-right: 250px;
+    text-align: left;
+    position: relative;
+    left: -100px;
+}
+
+.topsearch input{
+    padding: 8px;
+    font-size: 16px;
+    border-radius: 4px;
+    margin-top: 10px;
+    width: 250px;
+}
+
+.topbar {
+    max-width: auto;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+}
