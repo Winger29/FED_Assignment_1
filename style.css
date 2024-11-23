@@ -1,24 +1,14 @@
-header {
-    display: flex;
-    flex-direction:row;
-    align-items: center;
-    justify-content: center;
-    padding: 10px 0px;
-    width: auto;
-    height: 60px;
-    padding: 15px;
-    background-color: gray;
+.bname{
+    color: white;
     margin: 0;
+    font-size: 45px;
 }
 
-.bname h1 {
-    color: white;
-    margin: 0 auto;
-    padding: auto;
-    padding-right: 250px;
-    text-align: left;
-    position: relative;
-    left: -100px;
+.b-image{
+    width: 50px;
+    margin: 0;
+    margin-right: 10px;
+    padding-left: 10px ;
 }
 
 .topsearch input{
@@ -29,9 +19,66 @@ header {
     width: 250px;
 }
 
-.topbar {
-    max-width: auto;
+.topdiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100%;
-    margin: 0 auto;
-    padding: 0 20px;
+}
+
+
+.topdiv input[type="text"] {
+    padding: 5px 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.topdiv button{
+    background-color: black;
+    border-radius: 5px;
+}
+
+
+.topdiv button img{
+    width: 18px;
+    height: 22.5px;
+}
+
+.topbar {
+    background-color: grey;
+    padding: 10px 20px;
+    height: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -10px;
+}
+
+.topdiv form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+form {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+
+
+.car {
+    display: block;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%;
+    height: auto;
+  }
+.brand {
+    display: flex;
+    align-items: center;
+    margin-right: auto; 
 }
