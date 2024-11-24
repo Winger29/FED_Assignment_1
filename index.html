@@ -1,30 +1,52 @@
-<html5 <!DOCTYPE html>
-    <html>
-        <head>
-            <meta charset="utf-8">
-            <meta http-equiv="X-UA-Compatible" content="IE=edge">
-            <title> Home page </title>
-            <meta name="description" content="">
-            <meta name="viewport" content="width=device-width, initial-scale=1">
-            <link rel="stylesheet" href="style.css">
-        </head>
-        <body>
-            <nav class="topbar">
-                <div class="topdiv">
-                    <div class="brand"><img src="placeholder.svg" class="b-image">
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Home Page</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <nav class="topbar">
+            <ul class="topdiv">
+                <li class="brand">
+                    <img src="placeholder.svg" class="b-image" alt="Logo">
                     <h1 class="bname">AutoDict</h1>
-                    </div>
+                </li>
+                <li class="search">
                     <form action="search.html">
                         <input type="text" placeholder="Search vehicle here!" name="search">
                         <button type="submit">
-                            <img src="search-button.svg" alt="Search"><a href="search.html"></a>
+                            <img src="search-button.svg" alt="Search">
                         </button>
                     </form>
-                </div>
-            </nav>
-            <section>
-            <img src="g87-blue.jpg" class="car">
-            </section>
-            <script src="" async defer></script>
-        </body>
-    </html>
+                </li>
+                <li class="dropdown">
+                    <button class="dropbtn">Translate</button>
+                    <div class="dropdown-content">
+                        <a href="#">Language 1</a>
+                        <a href="#">Language 2</a>
+                        <a href="#">Language 3</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+        <nav class="navbar">
+            <ul class="navul">
+                <li><a href="#">Car Database</a></li>
+                <li><a href="#">Bikes Database</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Support</a></li>
+            </ul>
+        </nav>
+        <section>
+            <h1 >About site</h1>
+            </br>
+            <p>AutoDict is designed with simplicity, accessibility, and functionality in mind. Whether you're an avid car enthusiast or a newcomer exploring the world of automobiles, our site provides a seamless and intuitive experience for discovering the information you need.</p>
+            <img src="g87-blue.jpg" class="car" alt="Car Image">
+        </section>
+        <script src="" async defer></script>
+    </body>
+</html>
