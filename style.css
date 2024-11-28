@@ -5,9 +5,9 @@ body {
 
 .topbar {
     background-color: #5a5a5A;
-    padding: 10px 20px;
     width: 100%;
     display: flex;
+    margin: 0;
     justify-content: center;
     align-items: center;
 }
@@ -22,6 +22,15 @@ body {
     flex-wrap: wrap;
 }
 
+.otpages {
+    display: inline-block;
+}
+
+.otpages a{
+    margin-right: 25px;
+}
+
+
 .brand {
     display: flex;
     align-items: center;
@@ -34,15 +43,28 @@ body {
 }
 
 .bname {
-    color: black;
+    color: white;
     font-size: 24px;
     margin: 0;
     white-space: nowrap;
 }
 
+.brand-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: inherit; 
+}
+
+.brand-link:hover .bname {
+    text-decoration: underline; 
+}
+
+
 .search {
     flex-grow: 1;
     display: flex;
+    margin-left: 22.5%;
     justify-content: center;
 }
 
@@ -71,57 +93,6 @@ body {
 .search button img {
     width: 18px;
     height: 18px;
-}
-
-.dropdown {
-    position: relative;
-    display: inline-block;
-    max-width: 100%;
-}
-
-.dropbtn {
-    background-color: black;
-    color: white;
-    padding: 10px 20px;
-    font-size: 14px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    max-width: 100%;
-}
-
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: white;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
-    z-index: 1;
-    border-radius: 4px;
-}
-
-.dropdown-content a {
-    color: black;
-    padding: 10px 15px;
-    text-decoration: none;
-    display: block;
-    border-bottom: 1px solid #ccc;
-}
-
-.dropdown-content a:last-child {
-    border-bottom: none;
-}
-
-.dropdown-content a:hover {
-    background-color: #ddd;
-}
-
-.dropdown:hover .dropdown-content {
-    display: block;
-}
-
-.dropdown:hover .dropbtn {
-    background-color: #555;
 }
 
 section {
@@ -163,4 +134,159 @@ section {
     margin-right: 10px;
     text-align: center;
     padding: 8px 45px;
+}
+
+/* does the about section and to add the box behind it and make sure the h1 was above p as well */
+
+section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap:20px;
+}
+
+.abouttext {
+    color: white;
+    background-color: #5a5a5A;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 50px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.5);
+    max-width: 50%;
+}
+
+
+/* this is for creating the boxes for the feature set including adding other stuff when hovered*/
+.feature {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding:20px;
+}
+
+.feature_set{
+    background-color: #5a5a5a;
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 250px;
+    text-align: center;
+    padding: 15px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.45);
+    transition: transform 0.2s;
+}
+
+.feature_set:hover{
+    transform: scale(1.075);
+
+}
+
+.flogo {
+    width: 75px;
+    margin-bottom: 10px;
+}
+
+.ftitle {
+        width: 100%;
+        text-align: center;
+        font-size: 36px;
+        color: black;
+        margin-bottom: 20px;
+        font-weight: bold;  
+}
+
+.feature h3 {
+    font-size: 18px; 
+    color: white;
+    margin: 10px 0;
+}
+
+.feature p {
+    font-size: 14px; 
+    color: white;
+    line-height: 1.5;
+}
+
+/* does the footer portion such as adding background and moving certain portions of the footer around and also centering the footer*/
+.footer {
+    background-color: #5a5a5A;
+    padding: 20px;
+    color: white;
+    border-top: 1px solid black;
+    display: flex;
+    flex-direction: column;
+}
+
+.footercontain{
+    width: 100%;
+    padding: 70px 30px 20px;
+}
+
+.socialmedia {
+    display: flex;
+    justify-content: center;
+}
+
+.simage{
+    width: 25px;
+    height: 25px;
+    display: inline-block;
+}
+
+.socialmedia a {
+    text-decoration: none;
+    padding:10px;
+    background-color: white;
+    margin: 10px;
+    border-radius: 50%;
+}
+
+.footpage {
+    margin: 30px 0;
+}
+
+.footpage ul{
+    display: flex;
+    justify-content: center;
+}
+
+.footpage ul li a{
+    color:white;
+    margin: 20px;
+    font-size: 1.3em;
+    text-decoration: none;
+}
+
+.footpage ul li{
+    list-style-type: none;
+}
+.footer-copyright {
+    font-size: 12px;
+    color: #ccc;
+    text-align: center;
+    margin-top: 10px;
+}
+
+/* hover effects when hovering over social media buttons */
+.socialmedia a:hover{
+    transition: 0.5s;
+    transform: scale(1.25);
+}
+
+
+
+/* responsive width for sites */
+@media (max-width: 568px) {
+    .topdiv {
+        flex-direction: column;
+    }
+    .search input[type="text"] {
+        width: 100%;
+        margin-right: 0;
+    }
+    .search button {
+        margin-top: 10px;
+    }
+    .navbar {
+        flex-wrap: wrap;
+    }
 }

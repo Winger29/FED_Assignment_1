@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Home Page</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body class="landingbody">
+        <nav class="topbar">
+            <ul class="topdiv">
+                <li class="brand">
+                    <a href="index.html" class="brand-link">
+                        <img src="placeholder.svg" class="b-image" alt="Logo">
+                        <h1 class="bname">AutoDict</h1>
+                    </a>                
+                </li>
+                <li class="search">
+                    <form action="search.html">
+                        <input type="text" placeholder="Search vehicle here!" name="search">
+                        <button type="submit">
+                            <img src="search-button.svg" alt="Search">
+                        </button>
+                    </form>
+                </li>
+                <li class="dropdown">
+                    <button class="dropbtn">Translate</button>
+                    <div class="dropdown-content">
+                        <a href="#">Language 1</a>
+                        <a href="#">Language 2</a>
+                        <a href="#">Language 3</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+        <nav class="navbar">
+            <ul class="navul">
+                <li><a href="cardb.html">Car Database</a></li>
+                <li><a href="#">Bikes Database</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Support</a></li>
+            </ul>
+        </nav>
+        <section class="filter-search-section">
+            <div class="filter-search-bar">
+                <form action="search-results.html" method="get" class="search-form">
+                    <input type="text" placeholder="Search vehicles..." name="search" class="search-input">
+                    <button type="submit" class="search-btn">Search</button>
+                </form>
+                <div class="filter-options">
+                    <label for="brand">Brand:</label>
+                    <select name="brand" id="brand" class="filter-dropdown">
+                        <option value="">All</option>
+                        <option value="toyota">Toyota</option>
+                        <option value="honda">Honda</option>
+                        <option value="ford">Ford</option>
+                    </select>
+        
+                    <label for="year">Year:</label>
+                    <select name="year" id="year" class="filter-dropdown">
+                        <option value="">All</option>
+                        <option value="2023">2023</option>
+                        <option value="2022">2022</option>
+                        <option value="2021">2021</option>
+                    </select>
+        
+                    <label for="price">Price Range:</label>
+                    <select name="price" id="price" class="filter-dropdown">
+                        <option value="">All</option>
+                        <option value="0-20000">$0 - $20,000</option>
+                        <option value="20001-50000">$20,001 - $50,000</option>
+                        <option value="50001">$50,001+</option>
+                    </select>
+        
+                    <button type="button" class="apply-filters-btn">Apply Filters</button>
+                </div>
+            </div>
+        </section>
+        <footer class="footer">
+            <div class="footerlinks">
+                <button onclick="window.location.href='#';">Visit Main Site</button>
+                <button onclick="window.location.href='#';">Contact us</button>
+                <button onclick="window.location.href='#';">Support</button>
+            </div>
+            <div class="footer-copyright">
+                <p>© 2024 AutoDict. All rights reserved.</p>
+            </div>
+        </footer>
+        <script src="" async defer></script>
+    </body>
+</html>
