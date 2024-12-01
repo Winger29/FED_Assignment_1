@@ -8,62 +8,50 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="style.css">
     </head>
-    <body class="landingbody">
+    <body class="landingbody">    
         <nav class="topbar">
-            <ul class="topdiv">
                 <li class="brand">
                     <a href="index.html" class="brand-link">
-                        <img src="placeholder.svg" class="b-image" alt="Logo">
-                        <h1 class="bname">AutoDict</h1>
-                    </a>                
-                </li>
-                <li class="search">
-                    <form action="search.html">
-                        <input type="text" placeholder="Search vehicle here!" name="search">
-                        <button type="submit">
-                            <img src="search-button.svg" alt="Search">
-                        </button>
-                    </form>
+                        <img src="images/logo.jpeg" class="b-image" alt="Logo">
+                        <h1 class="bname">CarVault</h1>
+                    </a>    
+                    <button class="snavbtn" onclick="toggleSideNav()">☰</button>  
+                    <nav class="snav-menu" id="sideNav">
+                        <button class="closebtn" onclick="toggleSideNav()">×</button>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li ><a href="cardb.html">Car Database</a></li>
+                        </ul>
+                    </nav>            
                 </li>
                 <li class="otpages"><a href="cardb.html">Car Database</a></li>
-                <li class="otpages"><a href="#">About us</a></li>
-                <li class="otpages"><a href="Contactus.html">Support</a></li>
-            </ul>
         </nav>
-        <nav class="navbar">
-            <ul class="navul">
-                <li><a href="cardb.html">Car Database</a></li>
-                <li><a href="#">Bikes Database</a></li>
-                <li><a href="#">About us</a></li>
-                <li><a href="#">Support</a></li>
-            </ul>
-        </nav>
-        <section>
+        <div class="bgimage"></div>
+        <section class="siteabout">
+            <h1 class="abouttitle">About site</h1>
             <div class="abouttext">
-                <h1 >About site</h1>
-                <p>AutoDict is designed with simplicity, accessibility, and functionality in mind. Whether you're an avid car enthusiast or a newcomer exploring the world of automobiles, our site provides a seamless and intuitive experience for discovering the information you need.</p>
+                <p>CarVault is designed with simplicity, accessibility, and functionality in mind. Whether you're an avid car enthusiast or a newcomer exploring the world of automobiles, our site provides a seamless and intuitive experience for discovering the information you need.</p>
             </div>    
-            <img src="g87-blue.jpg" class="car" alt="Car Image">
         </section>
         <section class="feature">
             <h1 class="ftitle">Features on this site</h1>
             <div class="feature_set">
-                <img src="database-logo.svg" alt="comprehensive database" class="flogo">
+                <img src="images/database-logo.svg" alt="comprehensive database" class="flogo">
                 <h3>comprehensive database</h3>
                 <p>Access detailed data on a wide variety of cars and bikes, from specifications to performance metrics.</p>
             </div>
             <div class="feature_set">
-                <img src="filter-logo.svg" alt="Filter Icon" class="flogo">
+                <img src="images/filter-logo.svg" alt="Filter Icon" class="flogo">
                 <h3>Smart Filters</h3>
                 <p>Quickly narrow down your search with advanced filters like brand, model, year, price range, and more.</p>
             </div>
             <div class="feature_set">
-                <img src="search_insight.svg" alt="Stats Icon" class="flogo">
+                <img src="images/search_insight.svg" alt="Stats Icon" class="flogo">
                 <h3>Performance Insights</h3>
                 <p>Dive deep into stats and performance metrics like horsepower, mileage, speed, and more for every vehicle.</p>
             </div>              
             <div class="feature_set">
-                <img src="language.svg" alt="Translation Icon" class="flogo">
+                <img src="images/language.svg" alt="Translation Icon" class="flogo">
                 <h3>Multilingual Support</h3>
                 <p>Easily translate car and bike information into multiple languages, making it accessible to users worldwide.</p>
             </div>
@@ -74,19 +62,19 @@
                     <ul>
                         <li><a href="index.html">Home</a></li>
                         <li><a href="cardb.html">Database</a></li>
-                        <li><a href="#">Contact us</a></li>
                     </ul>
                 </div>
                 <div class="socialmedia">
-                    <a href="facebook.com"><img src="2021_Facebook_icon.svg" class="simage"></a>
-                    <a href="twitter.com"><img src="Logo_of_Twitter.svg" class="simage"></a>
-                    <a href="instagram.com"><img src="Instagram_logo_2016.svg" class="simage"></a>
+                    <a href="facebook.com"><img src="images/2021_Facebook_icon.svg" alt="facebook logo" class="simage"></a>
+                    <a href="twitter.com"><img src="images/Logo_of_Twitter.svg" alt="twitter logo" class="simage"></a>
+                    <a href="instagram.com"><img src="images/Instagram_logo_2016.svg" alt="instagram logo" class="simage"></a>
                 </div>
             </div>
             <div class="footer-copyright">
-                <p>© 2024 AutoDict. All rights reserved.</p>
+                <p>© 2024 CarVault. All rights reserved.</p>
             </div>
         </footer>               
-        <script src="" async defer></script>
+        <script src="homescript.js" async defer></script>
+        <script src="searchscript.js" async defer></script>
     </body>
 </html>

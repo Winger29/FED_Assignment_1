@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Car database</title>
+        <title>Porsche Model Database</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="style.css">
@@ -27,37 +27,36 @@
                 <li class="otpages"><a href="cardb.html">Car Database</a></li>
             </ul>
         </nav>
-        <section class="car-database">
-            <h2 class="section-title">Car Database</h2>
-            <p class="section-description">Browse through our comprehensive car database, featuring a wide range of models and manufacturers from around the world.</p>
+        <section class="porsche-database">
+            <h2 class="section-title">Porsche Model Database</h2>
+            <p class="section-description">Explore our extensive collection of Porsche models, featuring detailed specifications and insights.</p>
         </section>
         <section class="search-container">
             <div class="search-bar">
-                <input type="text" id="search" placeholder="Search for brands..." >
+                <input type="text" id="search" placeholder="Search for models...">
                 <div id="sbox" class="sbox"></div>
                 <div class="filter-container">
                     <button class="filter-btn" onclick="toggleFilter()"><img src="images/filter-logo.svg"></button>
                     <div id="filter-options" class="filter-options">
-                        <label for="bsort">Brand Sort by:</label>
-                        <select id="bsort">
-                            <option value=""></option>
-                            <option value="asc">Sort by Ascending (A-Z)</option>
-                            <option value="desc">Sort by Descending (Z-A)</option>
-                        </select>
-        
-                        <label for="csort">Country Sort by:</label>
-                        <select id="csort">
-                            <option value=""></option>
-                            <option value="asc">Sort by Ascending (A-Z)</option>
-                            <option value="desc">Sort by Descending (Z-A)</option>
-                        </select>
-                        <button class="apply-filter-btn">Apply Filter</button>
+                        <label for="fuel-type">Fuel Type:</label>
+                        <div>
+                            <input type="checkbox" id="gasoline" class="fuel-filter" onchange="filterByFuelType()">
+                            <label for="gasoline">Gasoline</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="electric" class="fuel-filter" onchange="filterByFuelType()">
+                            <label for="electric">Electric</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="hybrid" class="fuel-filter" onchange="filterByFuelType()">
+                            <label for="hybrid">Hybrid</label>
+                        </div>                    
                     </div>
                 </div>
             </div>
-        <div class="showbrand">
-        <div id="brandrow" class="brandrow"></div>
-        </div>
+            <div class="carsection">
+                <div id="carcontainer"></div>
+                </div>
         </section>
         <footer class="footer">
             <div class="footcontain">
@@ -80,6 +79,6 @@
         <script src="homescript.js" async defer></script>
         <script src="searchscript.js" async defer></script>
         <script src="filter.js" async defer></script>
-        <script src="branddb.js" async defer></script>
+        <script src="model.js" async defer></script>
     </body>
 </html>
