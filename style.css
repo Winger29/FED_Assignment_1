@@ -288,145 +288,6 @@ section{
 
 
 
-/* responsive width for sites */
-@media (max-width: 576px) {
-    .topbar {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        
-    }
-
-    .topdiv {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        flex-direction: column;
-        width: 100%;
-        position: relative;
-    }
-
-    .b-image{
-        width: 35px;
-        height: 35px;
-        margin-left: 40px;
-    }
-    .bname{
-        font-size: 17px;
-        margin: 0;
-    }
-    
-    .bgimage{
-        z-index: 0;
-        height: 500px;
-    }
-
-
-    .search {
-        display: none;
-    }
-
-    .snavbtn {
-        display: inline;
-        font-size: 30px;
-        cursor: pointer;
-        background: none; 
-        color: white;
-        border: none; 
-        outline: none;
-        margin-left: auto;
-        position: absolute; 
-        top: 0;
-    }
-
-    .snavbtn:hover {
-        transform: scale(1.1);
-    }
-
-    .closebtn{
-        display: inline-block;
-        font-size: 36px;
-        margin-left: 5px;
-        position:relative;
-    }
-
-    .snav-menu {
-        position: fixed;
-        top:0;
-        left:-100%;
-        width: 100%;
-        height:45%;
-        background-color: white;
-        overflow-y:auto;
-        z-index: 2;
-        display: flex;
-        flex-direction: column;
-        padding: 0px;
-        transition: left 0.3s ease;
-        box-sizing: border-box;
-    }
-
-    .snav-menu.active {
-        display: block;
-        left:0;
-    }
-
-    .snav-menu li {
-        border: 1px solid #333; 
-        border-radius: 8px; 
-        margin-bottom: 0px; 
-        padding: 10px;
-        margin: 0;
-        text-align: center;
-        width: 100%;
-        box-sizing: border-box; 
-        transition: 0.3s ease, transform 0.2s;
-    }
-
-    .snav-menu ul li{
-        list-style-type: none !important;
-        text-decoration: none;
-        display: flex;
-        flex-direction: column;
-        margin-right: 50px;
-        margin: 0;
-        width: 100%;
-    }
-
-    .otpages{
-        display: none;
-    }
-    .navbar {
-        display: inline;
-        flex-wrap: wrap;
-    }
-    .footpage ul {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding: 0;
-    }
-    .brandrow {
-        display: flex;
-        flex-wrap: wrap;
-    }
-    
-    .square .logo img {
-        width: 50px; 
-        height: auto; 
-    }
-    
-    .square .flag img {
-        width: 35px; 
-        height: 35px; 
-    }
-    
-    .square .name {
-        font-size: 14px; 
-        margin: 5px 0; 
-    }
-
-}
 
 
 
@@ -876,3 +737,143 @@ section {
     background-color: rgba(0, 0, 0, 0.8);
 }
 
+
+/* responsive width for some sites */
+@media (max-width: 576px) {
+    .topbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        
+    }
+
+    .topdiv {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: column;
+        width: 100%;
+        position: relative;
+    }
+
+    .b-image{
+        width: 35px;
+        height: 35px;
+        margin-left: 40px;
+    }
+    .bname{
+        font-size: 17px;
+        margin: 0;
+    }
+    
+    .bgimage{
+        z-index: 0;
+        height: 500px;
+    }
+
+
+    .search {
+        display: none;
+    }
+
+    .snavbtn {
+        display: inline;
+        font-size: 30px;
+        cursor: pointer;
+        background: none; 
+        color: white;
+        border: none; 
+        outline: none;
+        margin-left: auto;
+        position: absolute; 
+        top: 0;
+    }
+
+    .snavbtn:hover {
+        transform: scale(1.1);
+    }
+
+    .closebtn{
+        display: inline-block;
+        font-size: 36px;
+        margin-left: 5px;
+        position:relative;
+    }
+
+    .snav-menu {
+        position: fixed;
+        top:0;
+        left:-100%;
+        width: 100%;
+        height:45%;
+        background-color: white;
+        overflow-y:auto;
+        z-index: 2;
+        display: flex;
+        flex-direction: column;
+        padding: 0px;
+        transition: left 0.3s ease;
+        box-sizing: border-box;
+    }
+
+    .snav-menu.active {
+        display: block;
+        left:0;
+    }
+
+    .snav-menu li {
+        border: 1px solid #333; 
+        border-radius: 8px; 
+        margin-bottom: 0px; 
+        padding: 10px;
+        margin: 0;
+        text-align: center;
+        width: 100%;
+        box-sizing: border-box; 
+        transition: 0.3s ease, transform 0.2s;
+    }
+
+    .snav-menu ul li{
+        list-style-type: none !important;
+        text-decoration: none;
+        display: flex;
+        flex-direction: column;
+        margin-right: 50px;
+        margin: 0;
+        width: 100%;
+    }
+
+    .otpages{
+        display: none;
+    }
+    .navbar {
+        display: inline;
+        flex-wrap: wrap;
+    }
+    .footpage ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+    }
+    .brandrow {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    .square .logo img {
+        width: 50px; 
+        height: auto; 
+    }
+    
+    .square .flag img {
+        width: 35px; 
+        height: 35px; 
+    }
+    
+    .square .name {
+        font-size: 14px; 
+        margin: 5px 0; 
+    }
+
+}
