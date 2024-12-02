@@ -9,7 +9,8 @@
         <link rel="stylesheet" href="style.css">
     </head>
     <body class="landingbody">    
-        <nav class="topbar-normal">
+        <nav>
+            <ul class="topbar-normal">
                 <li class="brand">
                     <a href="index.html" class="brand-link">
                         <img src="images/logo.jpeg" class="b-image" alt="Logo">
@@ -31,12 +32,11 @@
             <h2 class="section-title">Porsche Model Database</h2>
             <p class="section-description">Explore our extensive collection of Porsche models, featuring detailed specifications and insights.</p>
         </section>
-        <section class="search-container">
+        <div class="search-container">
             <div class="search-bar">
                 <input type="text" id="search" placeholder="Search for models...">
-                <div id="sbox" class="sbox"></div>
                 <div class="filter-container">
-                    <button class="filter-btn" onclick="toggleFilter()"><img src="images/filter-logo.svg"></button>
+                    <button class="filter-btn" onclick="toggleFilter()"><img src="images/filter-logo.svg" alt="filter logo"></button>
                     <div id="filter-options" class="filter-options">
                         <label for="fuel-type">Fuel Type:</label>
                         <div>
@@ -57,7 +57,7 @@
             <div class="carsection">
                 <div id="carcontainer"></div>
                 </div>
-        </section>
+        </div>
         <footer class="footer">
             <div class="footcontain">
                 <div class="footpage">
@@ -67,18 +67,17 @@
                     </ul>
                 </div>
                 <div class="socialmedia">
-                    <a href="facebook.com"><img src="images/2021_Facebook_icon.svg" alt="facebook logo" class="simage"></a>
-                    <a href="twitter.com"><img src="images/Logo_of_Twitter.svg" alt="twitter logo" class="simage"></a>
-                    <a href="instagram.com"><img src="images/Instagram_logo_2016.svg" alt="instagram logo" class="simage"></a>
+                    <a href="www.facebook.com"><img src="images/2021_Facebook_icon.svg" alt="facebook logo" class="simage"></a>
+                    <a href="www.twitter.com"><img src="images/Logo_of_Twitter.svg" alt="twitter logo" class="simage"></a>
+                    <a href="www.instagram.com"><img src="images/Instagram_logo_2016.svg" alt="instagram logo" class="simage"></a>
                 </div>
             </div>
             <div class="footer-copyright">
                 <p>© 2024 CarVault. All rights reserved.</p>
             </div>
         </footer>               
-        <script src="homescript.js" async defer></script>
-        <script src="searchscript.js" async defer></script>
-        <script src="filter.js" async defer></script>
-        <script src="model.js" async defer></script>
+        <script src="JavaScript/homescript.js" async defer></script>
+        <script src="JavaScript/filter.js" async defer></script>
+        <script src="JavaScript/model.js" async defer></script>
     </body>
 </html>

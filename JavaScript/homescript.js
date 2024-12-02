@@ -22,3 +22,25 @@ function toggleSideNav() {
     sideNav.classList.toggle('active');
 }
 
+
+let lstscrolltop = 0;
+const topbar_normal = document.querySelector('.topbar-normal');
+const scroll = 10;
+
+window.addEventListener('scroll', () => {
+    const scrollTop = window.scrollY || document.documentElement.scrollTop;
+    const showAtTop = scrollTop < 100; 
+
+    if (showAtTop) {
+        topbar_normal.classList.remove('hidden');
+    } else {
+        topbar_normal.classList.add('hidden');    }
+
+    lastScrollTop = Math.max(0, scrollTop);
+});
+
+function toggleSideNav() {
+    const sideNav = document.getElementById('sideNav');
+    sideNav.classList.toggle('active');
+}
+

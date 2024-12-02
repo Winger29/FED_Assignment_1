@@ -21,7 +21,7 @@ body {
 }
 
 .topbar {
-    width: 100%;
+    width: 95%;
     display: flex;
     margin: 0;
     justify-content: center;
@@ -294,6 +294,7 @@ section{
         display: flex;
         justify-content: space-between;
         align-items: center;
+        
     }
 
     .topdiv {
@@ -431,7 +432,8 @@ section{
 
 /* this is used for other sections of the site that isnt landing page*/
 .topbar-normal{
-    width: 100%;
+    width: 99%;
+    max-width: 1550px;
     top: 0px;
     display: flex;
     margin: 0;
@@ -446,7 +448,7 @@ section{
 }
 
 .topbar-normal.hidden {
-    top: -50px; 
+    top: -75px; 
 }
 
 section {
@@ -641,7 +643,7 @@ section {
 }
 
 
-/* styling for the rectangles used for vehicles */
+/* styling for the rectangles used for vehicles and tweaking of the images to make sure its appropriate size and other font changes whilst making the img left and making all the text in a column */
 .carsection{
     margin: 0;
     display: flex;
@@ -712,6 +714,9 @@ section {
     font-family: 'Arial', sans-serif;
     }
 
+
+
+/* basically to create the outer rectangle of for the top portion which is description and image and making it shown on the left for img and right for description with its own square/rectangle box */
 .car-details {
     display: flex;
     align-items: center;
@@ -724,7 +729,6 @@ section {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: #f4f4f4; 
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -763,6 +767,8 @@ section {
     color: white;
 }
 
+
+/* for car specifications so to be more or less centralised whilst showing the iamge on the right and the specs on the left*/
 .car-specifications {
     padding: 20px;
     background-color: gray; 
@@ -817,30 +823,56 @@ section {
 
 /* for the more images portion of the site */
 .car-gallery {
-    margin-top: 80px;
-    text-align: center;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    width: 90%;
+    margin: auto;
 }
 
-.gallery-title {
-    font-size: 24px;
-    font-weight: bold;
-    margin-bottom: 20px; 
+.gallery-container {
+    overflow: hidden;
+    width: 100%;
+    max-height: 400px;
 }
 
 .galleryimages {
-    display: inline;
-    padding: 20px;
-    background-color: gray;
-    gap: 15px; 
+    display: flex;
+    transition: transform 0.5s ease;
 }
 
 .galleryimages img {
-    height: 200px; 
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s;
+    max-width: 100%;
+    height: auto;
+    max-height: 300px;
+    max-width: 100%;
+    object-fit: contain;
+    flex-shrink: 0;
 }
 
-.galleryimages img:hover {
-    transform: scale(1.05); 
+.gallery-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 100;
 }
+
+.left-btn {
+    left: 10px;
+}
+
+.right-btn {
+    right: 10px;
+}
+
+.gallery-btn:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+

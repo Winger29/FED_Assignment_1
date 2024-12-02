@@ -4,7 +4,7 @@ const ModelDb = [
       "fuel_type": "Gasoline",
       "category": "Sports Car",
       "year": 2023,
-      "image_url": "car images/2023-porsche-911-carrera-t-692-652e8b769d650.avif",
+      "image_url": "car_images/2023-porsche-911-carrera-t-692-652e8b769d650.avif",
       "page_url": "911-Carrera.html"
     },
     {
@@ -12,7 +12,7 @@ const ModelDb = [
       "fuel_type": "Electric",
       "category": "Sports Car",
       "year": 2023,
-      "image_url": "car images/2020-Porsche-Taycan-front-three-quarter-in-motion.avif",
+      "image_url": "car_images/2020-Porsche-Taycan-front-three-quarter-in-motion.avif",
       "page_url": "Porsche-Taycan.html"
     },
     {
@@ -20,7 +20,7 @@ const ModelDb = [
       "fuel_type": "Hybrid",
       "category": "SUV",
       "year": 2023,
-      "image_url": "car images/2021_porsche_cayenne_4dr-suv_s_fq_oem_1_1600.jpg",
+      "image_url": "car_images/2021_porsche_cayenne_4dr-suv_s_fq_oem_1_1600.jpg",
       "page_url": "Porsche-Cayenne.html"
     },
     {
@@ -28,7 +28,7 @@ const ModelDb = [
       "fuel_type": "Gasoline",
       "category": "Sedan",
       "year": 2023,
-      "image_url": "car images/2023-porsche-panamera-turbo-s-102-1671562605.avif",
+      "image_url": "car_images/2023-porsche-panamera-turbo-s-102-1671562605.avif",
       "page_url": "Porsche-Panamera.html"
     },
     {
@@ -36,7 +36,7 @@ const ModelDb = [
       "fuel_type": "Gasoline",
       "category": "SUV",
       "year": 2023,
-      "image_url": "car images/2023-porsche-macan-t-101-1645043997.avif",
+      "image_url": "car_images/2023-porsche-macan-t-101-1645043997.avif",
       "page_url": "Porsche-Macan.html"
     },
     {
@@ -44,7 +44,7 @@ const ModelDb = [
       "fuel_type": "Hybrid",
       "category": "Race Car",
       "year": 2019,
-      "image_url": "car images/porsche-919-hybrid-lead-1544468527.jpg",
+      "image_url": "car_images/porsche-919-hybrid-lead-1544468527.jpg",
       "page_url": "Porsche-919Evo.html"
     },
     {
@@ -52,7 +52,7 @@ const ModelDb = [
       "fuel_type": "Electric",
       "category": "Concept Car",
       "year": 2021,
-      "image_url": "car images/Porsche-mission-r.jpg",
+      "image_url": "car_images/Porsche-mission-r.jpg",
       "page_url": "Porsche-MissionR.html"
     }
   ];

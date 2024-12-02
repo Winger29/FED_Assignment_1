@@ -9,7 +9,8 @@
         <link rel="stylesheet" href="style.css">
     </head>
     <body class="landingbody">    
-        <nav class="topbar-normal">
+        <nav>
+            <ul class="topbar-normal">
                 <li class="brand">
                     <a href="index.html" class="brand-link">
                         <img src="images/logo.jpeg" class="b-image" alt="Logo">
@@ -31,23 +32,22 @@
             <h2 class="section-title">Car Database</h2>
             <p class="section-description">Browse through our comprehensive car database, featuring a wide range of models and manufacturers from around the world.</p>
         </section>
-        <section class="search-container">
+        <div class="search-container">
             <div class="search-bar">
                 <input type="text" id="search" placeholder="Search for brands..." >
-                <div id="sbox" class="sbox"></div>
                 <div class="filter-container">
-                    <button class="filter-btn" onclick="toggleFilter()"><img src="images/filter-logo.svg"></button>
+                    <button class="filter-btn" onclick="toggleFilter()"><img src="images/filter-logo.svg" alt="filter logo"></button>
                     <div id="filter-options" class="filter-options">
                         <label for="bsort">Brand Sort by:</label>
                         <select id="bsort">
-                            <option value=""></option>
+                            <option value="">none selected</option>
                             <option value="asc">Sort by Ascending (A-Z)</option>
                             <option value="desc">Sort by Descending (Z-A)</option>
                         </select>
         
                         <label for="csort">Country Sort by:</label>
                         <select id="csort">
-                            <option value=""></option>
+                            <option value="">none selected</option>
                             <option value="asc">Sort by Ascending (A-Z)</option>
                             <option value="desc">Sort by Descending (Z-A)</option>
                         </select>
@@ -58,7 +58,7 @@
         <div class="showbrand">
         <div id="brandrow" class="brandrow"></div>
         </div>
-        </section>
+        </div>
         <footer class="footer">
             <div class="footcontain">
                 <div class="footpage">
@@ -77,9 +77,8 @@
                 <p>© 2024 CarVault. All rights reserved.</p>
             </div>
         </footer>               
-        <script src="homescript.js" async defer></script>
-        <script src="searchscript.js" async defer></script>
-        <script src="filter.js" async defer></script>
-        <script src="branddb.js" async defer></script>
+        <script src="JavaScript/homescript.js" async defer></script>
+        <script src="JavaScript/filter.js" async defer></script>
+        <script src="JavaScript/branddb.js" async defer></script>
     </body>
 </html>

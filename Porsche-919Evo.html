@@ -10,7 +10,8 @@
         <link rel="stylesheet" href="style.css">
     </head>
     <body class="landingbody">    
-        <nav class="topbar-normal">
+        <nav>
+            <ul class="topbar-normal">
                 <li class="brand">
                     <a href="index.html" class="brand-link">
                         <img src="images/logo.jpeg" class="b-image" alt="Logo">
@@ -31,7 +32,7 @@
         <section class="car-details">
             <div class="car-container">
                 <div class="car-image">
-                    <img src="car images/porsche-919-hybrid-lead-1544468527.jpg" alt="Porsche 919 Evo">
+                    <img src="car_images/porsche-919-hybrid-lead-1544468527.jpg" alt="Porsche 919 Evo">
                 </div>
                 <div class="car-description">
                     <h2>Porsche 919 Evo</h2>
@@ -50,19 +51,23 @@
                         <li>Weight: 849 kg</li>
                     </ul>
                     <div class="spec-image">
-                        <img src="car images/919evo_pic2avif.avif" alt="Car Specifications Image">
+                        <img src="car_images/919evo_pic2avif.avif" alt="Car Specifications Image">
                     </div>
                 </div>
             </div>
-            <section>
-            </section>
-            <section class="car-gallery">
-                <div class="galleryimages">
-                    <img src="car images/images.jpg" alt="Porsche 919 Evo - 1">
-                    <img src="car images/Porsche-919-Evo-7-1000x564.jpg" alt="Porsche 919 Evo - 2">
-                    <img src="car images/porsche_100676529.jpg" alt="Porsche 919 Evo - 3">
+            <div class="car-gallery">
+                <button class="gallery-btn left-btn" onclick="moveGallery(-1)">&#10094;</button>
+                <div class="gallery-container">
+                    <div class="galleryimages">
+                        <img src="car_images/porsche-919-evo-2018-01-1280.jpg" alt="Porsche 919 Evo - 1">
+                        <img src="car_images/Porsche-919-Evo-7-1000x564.jpg" alt="Porsche 919 Evo - 2">
+                        <img src="car_images/porsche_100676529.jpg" alt="Porsche 919 Evo - 3">
+                        <img src="car_images/919_Evo_2.webp" alt="Porsche 919 Evo - 4">
+                        <img src="car_images/Porsche-919-Hybrid-Race-Car-40.webp" alt="Porsche 919 Evo - 5">
+                    </div>
                 </div>
-            </section>
+                <button class="gallery-btn right-btn" onclick="moveGallery(1)">&#10095;</button>
+            </div>            
         </section>
         <footer class="footer">
             <div class="footcontain">
@@ -73,7 +78,7 @@
                     </ul>
                 </div>
                 <div class="socialmedia">
-                    <a href="facebook.com"><img src="images/2021_Facebook_icon.svg" alt="facebook logo" class="simage"></a>
+                    <a href="facebook.com" target="_blank"><img src="images/2021_Facebook_icon.svg" alt="facebook logo" class="simage"></a>
                     <a href="twitter.com"><img src="images/Logo_of_Twitter.svg" alt="twitter logo" class="simage"></a>
                     <a href="instagram.com"><img src="images/Instagram_logo_2016.svg" alt="instagram logo" class="simage"></a>
                 </div>
@@ -82,9 +87,9 @@
                 <p>© 2024 CarVault. All rights reserved.</p>
             </div>
         </footer>               
-        <script src="homescript.js" async defer></script>
-        <script src="searchscript.js" async defer></script>
-        <script src="filter.js" async defer></script>
-        <script src="branddb.js" async defer></script>
+        <script src="JavaScript/homescript.js" async defer></script>
+        <script src="JavaScript/filter.js" async defer></script>
+        <script src="javaScript/branddb.js" async defer></script>
+        <script src="JavaScript/gallerymove.js" async defer></script>
     </body>
 </html>
