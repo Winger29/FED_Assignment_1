@@ -1,4 +1,4 @@
-# FED_Assignment_1
+# FED_Assignment_1 by Kaiwen
 Assignment 1 for Front End Development 
 
 # User Audience, Intent, and Purpose
